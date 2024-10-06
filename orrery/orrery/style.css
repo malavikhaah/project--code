@@ -1,0 +1,18 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+#canvas-container {
+    width: 100%;
+    height: 500px; /* Fixed height for better visualization */
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+#info {
+    border-radius: 5px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronomical Orrery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-4">
+        <h1>Orrery web</h1>
+        <div class="form-group">
+            <input type="text" id="search" class="form-control" placeholder="Search celestial objects...">
+        </div>
+    </header>
+
+    <main class="container my-4">
+       <img src="https://www.bing.com/images/search?view=detailV2&ccid=dSmZqLgL&id=070BF364A7BB75DCD1662E79A7218C5778835990&thid=OIP.dSmZqLgLQYXWDqhGSTqNiQHaEo&mediaurl=https%3a%2f%2flh6.ggpht.com%2fMJbVJw-6nPw5MWkEEH8hLORjbsHp4x1NXUcTJQ7A1gIpQaknR02eMeeJ8nvN-tixDuKH%3dh900&exph=800&expw=1280&q=Create+an+Orrery+Web+App+that+Displays+Near-Earth+Objects+images&simid=608018381865756379&FORM=IRPRST&ck=FCD7D5903D151F09A97667EF8870F77E&selectedIndex=2&itb=0" alt="orrery">
+        <div class="controls mt-3 text-center">
+            <label for="time">Time:</label>
+            <input type="datetime-local" id="time" class="form-control-inline mx-2">
+            <button id="play" class="btn btn-success mx-1">Play</button>
+            <button id="pause" class="btn btn-warning mx-1">Pause</button>
+            <button id="fast-forward" class="btn btn-info mx-1">Fast Forward</button>
+        </div>
+
+        <div id="info" class="mt-4">
+            <h2>Information</h2>
+            <p id="details" class="bg-light p-2">Select an object to see details.</p>
+        </div>
+    </main>
+
+    <footer class="text-center py-3 bg-dark text-white">
+        <p>&copy; 2024 Astronomical Orrery Project</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="module" src="js/main.js" defer></script>
+</body>
+</html>
